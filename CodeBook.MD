@@ -11,22 +11,24 @@ Data files at "C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR
 Assigment details check file dimentions and details using dim(filename) or str(filename) identify mean and std values features.txt create single file by merging test and training sets using rbind() with descriptive labels as column names
 
 Data Dictionary
-1 tBodyAcc-mean()-X
-2 tBodyAcc-mean()-Y
-3 tBodyAcc-mean()-Z
-4 tBodyAcc-std()-X
-5 tBodyAcc-std()-Y
-6 tBodyAcc-std()-Z
-7 tBodyAcc-mad()-X
-8 tBodyAcc-mad()-Y
-9 tBodyAcc-mad()-Z
-10 tBodyAcc-max()-X
-11 tBodyAcc-max()-Y
-12 tBodyAcc-max()-Z
-13 tBodyAcc-min()-X
-14 tBodyAcc-min()-Y
-15 tBodyAcc-min()-Z
-16 tBodyAcc-sma()
+
+There are 561 attributes (columns) in the input test and training data, only 66 are used in the final data set. The labels for each of these columns is contained in the file "features.txt". 66 of these attributes are determinated to be related to the mean and standard deviation. Algorithm for inclusion: the attribute label in features.txt contains the string "mean()" or "std()". 495 attributes are excluded - not summarized in the "tidydatafinal.csv"
+1 tBodyAcc-mean()-X Mean Body acceration X axis
+2 tBodyAcc-mean()-Y Mean Body acceration y axis
+3 tBodyAcc-mean()-Z Mean Body acceration z axis
+4 tBodyAcc-std()-X Standard deviation Body acceration X axis
+5 tBodyAcc-std()-Y Standard deviation Body acceration y axis
+6 tBodyAcc-std()-Z Standard deviation Body acceration z axis
+7 tBodyAcc-mad()-X Mean absolute deviation Body acceration X axis
+8 tBodyAcc-mad()-Y Mean Absolute Deviation Body acceration y axis
+9 tBodyAcc-mad()-Z Mean Absolute Deviation Body acceration z axis
+10 tBodyAcc-max()-X maximum acceleration Body acceration X axis
+11 tBodyAcc-max()-Y Maxinum acceleration Body acceration y axis
+12 tBodyAcc-max()-Z Maximun accerelation Body acceration z axis
+13 tBodyAcc-min()-X Minimum Body acceration X axis
+14 tBodyAcc-min()-Y minimum Body acceration y axis
+15 tBodyAcc-min()-Z Minimum Body acceration y axis
+16 tBodyAcc-sma() 
 17 tBodyAcc-energy()-X
 18 tBodyAcc-energy()-Y
 19 tBodyAcc-energy()-Z

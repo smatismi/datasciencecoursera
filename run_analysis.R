@@ -25,9 +25,8 @@ str(df)
 
 #Select columns that have mean values
 # Select columns whose name maches a regular expression
-my_datacolumns %>% select(contains("mean")
-my_datacolumns %>% select(contains("std")
+ tidydata.csv <- my_datacolumns %>% select(contains("mean") my_datacolumns %>% select(contains("std")
 
-
+tidaydatafinal.csv
 
 dfextract<- df[, c("name1", "name2", "name3")]

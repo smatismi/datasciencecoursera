@@ -53,3 +53,9 @@ names(tidydatafr)<-gsub("fBodyBodyAccJerkMag", "fullbodybodyAccelerationjerkmagn
 names(tidydatafr)<-gsub("fBodyBodyGyroMag", "fullbodybodygyroscopejerkmagnitutude", names(tidydatafr)
 names(tidydatafr)<-gsub("mean()", "MEAN", names(tidydatafr))
 names(tidydatafr)<-gsub("std()", "SD", names(tidydatfr))
+ 
+#  create a second, independent tidy data set with the average of each variable for each activity and each subject.                        
+summerizedata <- tidydatfr %>%
+    group_by(subject, activity) %>%
+    summarise_all(funs(mean))
+write.table(summarizedata, "summarizeata.txt", row.name=FALSE)

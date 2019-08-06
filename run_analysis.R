@@ -1,13 +1,13 @@
 # this is the programminig assignment 1 for the getting and cleaning data course
 # get data from a file
-features <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\features.txt", col.names = c("n","functions"))
-activities <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\activity_labels.txt", col.names = c("code", "activity"))
-subject_test <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\subject_test.txt", col.names = "subject")
-x_test <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\X_test.txt", col.names = features$functions)
-y_test <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\y_test.txt", col.names = "code")
-subject_train <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\subject_train.txt", col.names = "subject")
-x_train <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\X_train.txt", col.names = features$functions)
-y_train <- read.table("C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\y_train.txt", col.names = "code")
+features <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/Coursera/UCI HAR Dataset/features.txt", col.names = c("n","functions"))
+activities <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/CourseraUCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
+subject_test <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/Coursera/UCI HAR Dataset/subject_test.txt", col.names = "subject")
+x_test <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/Coursera/UCI HAR Dataset/X_test.txt", col.names = features$functions)
+y_test <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/Coursera/UCI HAR Dataset/y_test.txt", col.names = "code")
+subject_train <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/Coursera/UCI HAR Dataset/subject_train.txt", col.names = "subject")
+x_train <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/Coursera/UCI HAR Dataset/X_train.txt", col.names = features$functions)
+y_train <- read.table("C:/Users/smatismi/OneDrive - Capgemini/Documents/Coursera/UCI HAR Dataset/y_train.txt", col.names = "code")
 #set path to test files
 mypath = "C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\test"
 setwd(mypath)
@@ -18,9 +18,6 @@ test_files_df <- lapply(test_files_ls, function(x) {read.table(file = x, header 
 # Combine them
 combined_df <- do.call("rbind", lapply(test_files_df, as.data.frame)) 
 
-#set path to training files
-#mypath = "C:\Users\smatismi\OneDrive - Capgemini\Documents\Coursera\UCI HAR Dataset\train"
-#setwd(mypath)
 # Create list of text files from test and training data and combine them 
 X <- rbind(x_train, x_test)
 Y <- rbind(y_train, y_test)

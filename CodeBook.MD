@@ -1,4 +1,4 @@
-file for programing assignment for getting and cleaning data includes code book AKA data dictionary Data Source http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+File for programing assignment for getting and cleaning data includes code book AKA data dictionary Data Source http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Project data https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -12,7 +12,10 @@ Assigment details check file dimentions and details using dim(filename) or str(f
 
 Data Dictionary
 
-There are 561 attributes (columns) in the input test and training data, only 66 are used in the final data set. The labels for each of these columns is contained in the file "features.txt". 66 of these attributes are determinated to be related to the mean and standard deviation. Algorithm for inclusion: the attribute label in features.txt contains the string "mean()" or "std()". 495 attributes are excluded - not summarized in the "tidydatafinal.csv"
+There are 561 attributes (columns) in the input test and training data, only 66 are used in the final data set. The labels for each of these columns is contained in the file "features.txt". 
+
+66 of these attributes are determinated to be related to the mean and standard deviation. Algorithm for inclusion: the attribute label in features.txt contains the string "mean()" or "std()". 495 attributes are excluded - not summarized in the "summarizedata.txt"
+
 1 tBodyAcc-mean()-X Mean Body acceration X axis
 2 tBodyAcc-mean()-Y Mean Body acceration y axis
 3 tBodyAcc-mean()-Z Mean Body acceration z axis

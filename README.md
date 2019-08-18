@@ -1,5 +1,5 @@
 # datasciencecoursera
-readme file for programing assignment for getting and cleaning data
+Readme file for programing assignment for getting and cleaning data
 includes code book AKA data dictionary
 Data Source http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
